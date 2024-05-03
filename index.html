@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>La cabra - Inicio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/a0c9fa2f9f.js" crossorigin="anonymous"></script>
   <style>
@@ -15,6 +15,7 @@
     
     }
   </style>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -34,7 +35,7 @@
             <input class="p-1 rounded" type="password" name="password" id="password" placeholder="  Password">
           </div>
         <p id="email-error" class="error-message hidden">Por favor, introduce un correo electrónico válido.</p>
-        <input type="button" value="Iniciar sesión" onclick="validateForm()" class="text-white hover:bg-sky-800 p-2 rounded-md mt-3">
+        <input type="button" value="Iniciar sesión" onclick="validateForm()" class="text-white hover:bg-sky-800 p-2 rounded-md mt-3" id="boton">
       </div>
     </div>
 
@@ -51,6 +52,10 @@
         emailError.classList.add('hidden');
       }
     }
+
+    document.getElementById("miBoton").addEventListener("click", function() {
+      window.location.href = "https://mail.google.com/";
+  });
   </script>
   
 </body>
